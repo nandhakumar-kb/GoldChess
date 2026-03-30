@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandMaster</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="overlay"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <main class="showcase-container">
+        <div class="king-container left">
+            <img src="assets/images/landing/king-showcase.png" alt="White King" class="king-image shadow-effect" id="king-left">
+            <div class="glow-effect white-glow"></div>
+        </div>
+        
+        <div class="center-content" id="center-ui">
+            <h1 class="game-title"><span class="text-gold">GRAND</span><span class="text-blue">MASTER</span></h1>
+            <p class="game-subtitle">The Ultimate Chess Experience</p>
+            <button class="play-button" id="play-btn" type="button">
+                <span class="btn-text">PLAY NOW</span>
+            </button>
+            <p class="launch-status" id="launch-status" aria-live="polite"></p>
+            <a class="fallback-link hidden" id="fallback-link" href="game.html">Open Game Directly</a>
+        </div>
+
+        <div class="king-container right">
+            <img src="assets/images/landing/blue-king-showcase.png" alt="Blue King" class="king-image shadow-effect blue-tint" id="king-right">
+            <div class="glow-effect blue-glow"></div>
+        </div>
+    </main>
+
+    <div class="flash-screen" id="flash-screen"></div>
+
+    <noscript>
+        <p style="position: fixed; bottom: 1rem; left: 1rem; right: 1rem; text-align: center; background: rgba(0,0,0,0.7); color: #fff; padding: 0.75rem; border-radius: 8px;">
+            JavaScript is disabled. Use this direct link: <a href="game.html" style="color: #ffd700;">Open Game</a>
+        </p>
+    </noscript>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

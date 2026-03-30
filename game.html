@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandMaster | Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    <main class="board-wrap">
+        <div class="top-row">
+            <a href="index.html" class="back-link">Back to Home</a>
+            <div class="status-wrap">
+                <p id="status" class="status" aria-live="polite">Loading game...</p>
+                <p id="moveAnnouncer" class="sr-only" aria-live="polite"></p>
+            </div>
+        </div>
+        <div id="board" class="board" aria-label="Chess board"></div>
+    </main>
+
+    <!-- Game Over Modal -->
+    <div id="gameOverModal" class="glass-modal hidden">
+        <div class="modal-content">
+            <h2 id="gameOverTitle">Checkmate</h2>
+            <p id="gameOverDesc">You have been defeated.</p>
+            <button class="play-again-btn" id="playAgainBtn" type="button">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Promotion Modal -->
+    <div id="promoModal" class="glass-modal hidden">
+        <div class="modal-content">
+            <h2>Promote Pawn</h2>
+            <p>Choose your reinforcement</p>
+                <div class="promo-container" id="promoContainer"></div>
+        </div>
+    </div>
+
+    <script src="js/game.js" defer></script>
+</body>
+</html>
